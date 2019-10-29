@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
 import {Text, View, Dimensions} from 'react-native';
 import styled from 'styled-components';
+import background from '../assests/background.jpg'
 
 const {height , width} = Dimensions.get('window')
 const Splash = (props) => {
@@ -15,8 +16,7 @@ const Splash = (props) => {
 export default Splash
 
 const Container = styled.View`
-    flex: 1;
-    background-color:#FFFFFA; 
+    flex: 1; 
     justify-content:center;
     align-items:center;
 
