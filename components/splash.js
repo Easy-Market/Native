@@ -1,15 +1,35 @@
 import React , {useState} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Dimensions} from 'react-native';
 import styled from 'styled-components';
 
+const {height , width} = Dimensions.get('window')
 const Splash = (props) => {
     return (
-        <View>
-            <Text> EasyMarket</Text>
-            <Text style={styles.instructions}>Sell Easy, Buy Easy</Text>
-
-        </View>
+        <Container>
+            <Heading> EasyMarket</Heading>
+            <Slogan>Sell Easy, Buy Easy</Slogan>
+        </Container>
     )
 }
 
-export default 
+export default Splash
+
+const Container = styled.View`
+    flex: 1;
+    background-color:#FFFFFA; 
+    justify-content:center;
+    align-items:center;
+
+`;
+const Heading  = styled.Text`
+    color:#912F40;
+    font-family:'lora-italic';
+    font-size:30%;
+    font-size: ${width/10};
+
+`
+const Slogan = styled.Text`
+    color:#080705;
+    font-size:${width/20};
+
+`;
