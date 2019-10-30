@@ -9,7 +9,7 @@ const instructions = Platform.select({
 
 export default App = () => {
     return (
-      <Landing />
+      <Splash />
     );
   }
 
