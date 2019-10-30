@@ -45,13 +45,15 @@ const Home = props => {
       imageStyle={getStyle()}
       onLayout={changeOrientation}
     >
+  <Container>
       <Heading>EasyMarket</Heading>
       <Slogan>Sell Easy , Buy Easy</Slogan>
       <TouchableHighlight>
-          <View>
-              <Text>Continue</Text>
-          </View>
+          <Button>
+              <Continue>Continue</Continue>
+          </Button>
       </TouchableHighlight>
+      </Container>
     </ImageBackground>
   );
 };
@@ -61,12 +63,24 @@ const Heading = styled.Text`
   color: #912f40;
   font-family: "lora-italic";
   font-size: ${width / 10};
-  margin-top:${height / 3};
 `;
 const Slogan = styled.Text`
   color: #080705;
   text-align: center;
   font-size: ${width / 20};
+`;
+const Button = styled.View`
+  background-color:#702632;
+  border-radius:${10};
+  margin-top:${height / 15};
+  padding-top:${height / 30};
+  padding-bottom:${height / 30};
+
+`
+const Continue = styled.Text`
+  text-align:center;
+  color: #fffffA;
+  font-size:${width / 25}
 `;
 const OtherStyles = StyleSheet.create({
   background: {
