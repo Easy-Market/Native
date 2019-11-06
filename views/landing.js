@@ -48,6 +48,8 @@ const Home = props => {
   <Container orient={setPortrait}>
       <Heading>EasyMarket</Heading>
       <Slogan>Sell Easy , Buy Easy</Slogan>
+      <Text>Nigerian's Easiest Reseller Platform</Text>
+      
       <TouchableHighlight>
           <Button>
               <Continue>Continue</Continue>
