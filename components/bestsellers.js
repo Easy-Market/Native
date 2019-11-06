@@ -6,8 +6,9 @@ import {
     TouchableHighlight,
     Dimensions,
     ImageBackground,
-    StyleSheet
+    StyleSheet,
   } from "react-native";
+
 import styled from 'styled-components';
 import loafers from '../assests/loafers.png'
   const BestSellers = () => {
@@ -16,16 +17,28 @@ import loafers from '../assests/loafers.png'
               <Subheading>Best Sellers</Subheading>
               <CarouselView>
                     <SingleCarousel source={loafers}>
-                        <Text>Bespoke Shoes</Text>
+                        <Description>
+                        <Seller>Bespoke Shoes</Seller>
+                        <Product> Shoes and Fabrics</Product>
+                        </Description>
                     </SingleCarousel>
                     <SingleCarousel source={loafers}>
-                        <Text>Bespoke Shoes</Text>
+                        <Description>
+                        <Seller>Linder Makeup</Seller>
+                        <Product>Makeup and Accessories</Product>
+                        </Description>
                     </SingleCarousel>
                     <SingleCarousel source={loafers}>
-                        <Text>Bespoke Shoes</Text>
+                        <Description>
+                        <Seller>C2Far</Seller>
+                        <Product>Shoes and Belts</Product>
+                        </Description>
                     </SingleCarousel>
                     <SingleCarousel source={loafers}>
-                        <Text>Bespoke Shoes</Text>
+                        <Description>
+                        <Seller>Laura Bags</Seller>
+                        <Product>Bags</Product>
+                        </Description>
                     </SingleCarousel>
               </CarouselView>
           </Container>
@@ -50,9 +63,17 @@ import loafers from '../assests/loafers.png'
     flex-direction:row;
   `;
   const SingleCarousel = styled.ImageBackground`
-    width:25%;
+    width:30%;
     height:100%;
     background-color:#702632;
     border-radius:10px;
     margin:2%;
+  `;
+  const Seller = styled.Text`
+  `;
+  const Description = styled.View`
+  
+  `;
+  const Product = styled.Text`
+  
   `;

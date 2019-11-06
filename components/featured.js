@@ -8,11 +8,40 @@ import {
     StyleSheet
   } from "react-native";
   import styled from 'styled-components/native';
-  import loafers from '../assests/loafers.png'
+  import loafers from '../assests/loafers.png';
+  import {Svg} from 'react-native-svg'
   const Featured = (props) => {
       return (
           <Contains>
           <Style></Style>
+          <Container>
+            <Description>
+                <Name>Tassels Loafers</Name>
+                <Price>N 10000.00 </Price>
+                <ButtonContainer>
+                    <Button>
+                        <Buy>Buy Now</Buy>
+                    </Button>
+                    </ButtonContainer>
+            </Description>
+            <Picture>
+                <Content  source={loafers} imageStyle={Image.picture}/>
+            </Picture>
+          </Container>
+          <Container>
+            <Description>
+                <Name>Tassels Loafers</Name>
+                <Price>N 10000.00 </Price>
+                <ButtonContainer>
+                    <Button>
+                        <Buy>Buy Now</Buy>
+                    </Button>
+                    </ButtonContainer>
+            </Description>
+            <Picture>
+                <Content  source={loafers} imageStyle={Image.picture}/>
+            </Picture>
+          </Container>
           <Container>
             <Description>
                 <Name>Tassels Loafers</Name>
@@ -38,6 +67,7 @@ import {
   height:50%;
   width:100%;
   display:flex;
+  flex-direction:row;
   justify-content:center;
   align-items:center;
   
@@ -47,7 +77,7 @@ import {
   `
   ;
   const Container = styled.View`
-  width:70%;
+  width:80%;
   display:flex;
   flex-direction:row;
   height:90%;
@@ -59,7 +89,7 @@ import {
   background-color:#40434e;
   shadow-radius: 16;
   elevation: 24;
-  margin: 0 5%;
+  margin: 0% 1%;
 
   `;
   const ButtonContainer = styled.TouchableHighlight`
