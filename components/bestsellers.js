@@ -7,6 +7,7 @@ import {
     Dimensions,
     ImageBackground,
     StyleSheet,
+    ScrollView
   } from "react-native";
 
 import styled from 'styled-components';
@@ -15,7 +16,8 @@ import loafers from '../assests/loafers.png'
       return (
           <Container>
               <Subheading>Best Sellers</Subheading>
-              <CarouselView>
+              <ScrollView horizontal={true}>
+              {/* <CarouselView> */}
                     <SingleCarousel source={loafers}>
                         <Description>
                         <Seller>Bespoke Shoes</Seller>
@@ -34,13 +36,8 @@ import loafers from '../assests/loafers.png'
                         <Product>Shoes and Belts</Product>
                         </Description>
                     </SingleCarousel>
-                    <SingleCarousel source={loafers}>
-                        <Description>
-                        <Seller>Laura Bags</Seller>
-                        <Product>Bags</Product>
-                        </Description>
-                    </SingleCarousel>
-              </CarouselView>
+              {/* </CarouselView> */}
+              </ScrollView>
           </Container>
       )
   }
@@ -58,9 +55,11 @@ import loafers from '../assests/loafers.png'
     font-size:16px;
   `;
   const CarouselView = styled.View`
-    height:35%;
+    height:100%;
     display:flex;
     flex-direction:row;
+    border-radius:5px;
+    
   `;
   const SingleCarousel = styled.ImageBackground`
     width:35%;
@@ -89,3 +88,9 @@ import loafers from '../assests/loafers.png'
   text-align:center;
   height:50%;
   `;
+  // const Contains = styled.ScrollView`
+  // height:35%;
+  // flex-direction:row;
+  // display;flex;
+  // `;
+
