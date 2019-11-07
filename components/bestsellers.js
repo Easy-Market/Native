@@ -63,17 +63,29 @@ import loafers from '../assests/loafers.png'
     flex-direction:row;
   `;
   const SingleCarousel = styled.ImageBackground`
-    width:30%;
+    width:35%;
     height:100%;
     background-color:#702632;
     border-radius:10px;
     margin:2%;
   `;
   const Seller = styled.Text`
+  color:#702632;
+  font-weight:bold;
+  text-align:center;
+  height:40%;
   `;
   const Description = styled.View`
-  
+  background-color:#FFFFFA;
+  opacity:0.6;
+  width:100%;
+  height:35%;
+  margin-top:40%;
   `;
   const Product = styled.Text`
-  
+  color:#40434e;
+  font-size:12px;
+  font-weight:bold;
+  text-align:center;
+  height:50%;
   `;
