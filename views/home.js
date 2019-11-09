@@ -30,7 +30,7 @@ import {
           
             </LogoContainer>
             <Featured/>
-            <BestSellers />
+            {/* <BestSellers /> */}
             <Categories />
           </Container>
       )
@@ -41,6 +41,7 @@ import {
   const Container = styled.View`
     width: 100%;
     display:flex;
+    height:100%;
     margin:0;
   `;
   const LogoContainer = styled.View`

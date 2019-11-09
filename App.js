@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View , ScrollView} from 'react-native';
 import Splash from './views/splash'
 import Landing from './views/landing'
 import Home from './views/home'
@@ -10,7 +10,10 @@ const instructions = Platform.select({
 
 export default App = () => {
     return (
-      <Home/>
+      // <ScrollView style={styles.view}>
+            <Home/>
+      // </ScrollView>
+  
     );
   }
 
@@ -31,4 +34,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  view:{
+    height:'100%',
+  }
 });

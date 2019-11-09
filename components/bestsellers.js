@@ -16,8 +16,7 @@ import loafers from '../assests/loafers.png'
       return (
           <Container>
               <Subheading>Best Sellers</Subheading>
-              <ScrollView horizontal={true}>
-              {/* <CarouselView> */}
+              <CarouselView>
                     <SingleCarousel source={loafers}>
                         <Description>
                         <Seller>Bespoke Shoes</Seller>
@@ -36,8 +35,7 @@ import loafers from '../assests/loafers.png'
                         <Product>Shoes and Belts</Product>
                         </Description>
                     </SingleCarousel>
-              {/* </CarouselView> */}
-              </ScrollView>
+              </CarouselView>
           </Container>
       )
   }
@@ -55,7 +53,7 @@ import loafers from '../assests/loafers.png'
     font-size:16px;
   `;
   const CarouselView = styled.View`
-    height:100%;
+    height:40%;
     display:flex;
     flex-direction:row;
     border-radius:5px;
