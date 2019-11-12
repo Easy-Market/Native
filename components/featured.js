@@ -64,7 +64,7 @@ import {
 
   const Contains = styled.View`
   margin:0;
-  height:50%;
+  height:100%;
   width:100%;
   display:flex;
   flex-direction:row;

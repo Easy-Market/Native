@@ -10,10 +10,10 @@ const instructions = Platform.select({
 
 export default App = () => {
     return (
-      // <ScrollView style={styles.view}>
+      <ScrollView contentContainerStyle={styles.contentContainer} >
             <Home/>
-      // </ScrollView>
-  
+            <Landing/>
+            </ScrollView>
     );
   }
 
@@ -36,5 +36,11 @@ const styles = StyleSheet.create({
   },
   view:{
     height:'100%',
+  },
+  contentContainer:{
+    height:'100%',
+    flex:1,
+    flexDirection:'column',
+    backgroundColor:'green',
   }
 });

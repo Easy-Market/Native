@@ -9,6 +9,7 @@ import {
     StyleSheet
   } from "react-native";
   import styled from 'styled-components';
+  import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
   import Icon from 'react-native-vector-icons/Ionicons';
  
 
@@ -18,8 +19,8 @@ import {
             <Subheading>Categories</Subheading>
             <CategoriesSection>
               <AnotherCat>
-                <Icon
-                name='md-pizza'
+                <Icons
+                name="shoe-formal"
                 size={30}
                 color="grey"
                 />
@@ -28,7 +29,7 @@ import {
                  <Icon
               name='md-shirt'
               size={30}
-              color="#702632"
+              color="#080705"
               /></Cat>
                     <AnotherCat>
                  <Icon
@@ -85,7 +86,7 @@ import {
 
   const Contain = styled.View`
   width:100%;
-  height:100%;
+  height:50%;
   `;
   const Subheading = styled.Text`
   color:#080705;
@@ -107,10 +108,8 @@ const Cat= styled.TouchableHighlight`
   display:flex;
   justify-content:center;
   align-items:center;
-  shadow-color: #000;
-  shadow-opacity: .5;
-  shadow-radius: 10;
-  elevation: 25;
+  background-color:#e2e2e2;
+
 `;
 const AnotherCat = styled.TouchableHighlight`
 width:10%;

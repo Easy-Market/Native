@@ -6,7 +6,8 @@ import {
     TextInput,
     Dimensions,
     ImageBackground,
-    StyleSheet
+    StyleSheet,
+    ScrollView,
   } from "react-native";
   import styled from 'styled-components'
   import Featured from '../components/featured'
@@ -15,7 +16,9 @@ import {
   import Icon from 'react-native-vector-icons/Ionicons'
   const Home = () => {
       return (
+      
           <Container> 
+              <ScrollView contentContainerStyle={styles.contentContainer}>
             <LogoContainer> 
                 <Logo>EasyMarket</Logo>
                 <Icon 
@@ -30,9 +33,11 @@ import {
           
             </LogoContainer>
             <Featured/>
-            {/* <BestSellers /> */}
+            <BestSellers />
             <Categories />
+            </ScrollView>
           </Container>
+      
       )
   }
   export default Home
@@ -71,3 +76,11 @@ import {
 //   margin:0;
 //   border-radius:10px;
 //   `;
+
+const styles = StyleSheet.create({
+  contentContainer:{
+    height:'100%',
+    flex:1,
+    backgroundColor:'green'
+  }
+})

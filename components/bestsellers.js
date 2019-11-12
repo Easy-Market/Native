@@ -17,6 +17,9 @@ import loafers from '../assests/loafers.png'
           <Container>
               <Subheading>Best Sellers</Subheading>
               <CarouselView>
+
+              <ScrollView  horizontal={true} contentContainerStyle={styles.contentContainer} overScrollMode={'always'} >
+             
                     <SingleCarousel source={loafers}>
                         <Description>
                         <Seller>Bespoke Shoes</Seller>
@@ -35,7 +38,16 @@ import loafers from '../assests/loafers.png'
                         <Product>Shoes and Belts</Product>
                         </Description>
                     </SingleCarousel>
+                    <SingleCarousel source={loafers}>
+                        <Description>
+                        <Seller>C2Far</Seller>
+                        <Product>Shoes and Belts</Product>
+                        </Description>
+                    </SingleCarousel>
+                    </ScrollView>
               </CarouselView>
+   
+         
           </Container>
       )
   }
@@ -55,6 +67,7 @@ import loafers from '../assests/loafers.png'
   const CarouselView = styled.View`
     height:40%;
     display:flex;
+    width:100%;
     flex-direction:row;
     border-radius:5px;
     
@@ -86,6 +99,11 @@ import loafers from '../assests/loafers.png'
   text-align:center;
   height:50%;
   `;
+  const styles = StyleSheet.create({
+    contentContainer:{
+      flex:1,
+    }
+  })
   // const Contains = styled.ScrollView`
   // height:35%;
   // flex-direction:row;
